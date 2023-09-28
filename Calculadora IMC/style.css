@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+}
+
+#caixa{
+    background-color: rgb(218, 255, 124); 
+    border: solid 2px;
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+
+#formulario{
+    display:flex;
+    justify-content: center;
+   
+}
+#calcular{
+    margin: 10%;
+}
+
+#peso, #altura{
+    width: 100px;
+}
+
+.entradas{
+    margin: 20px;
+    
+}

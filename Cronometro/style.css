@@ -1,0 +1,30 @@
+
+
+
+#conteiner{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border: 2px solid black;
+    border-radius: 10px;
+
+    background-color: cadetblue;
+    padding: 10px;
+    margin: 2px;
+    
+}
+
+#relogio{
+    display: flex;
+   
+}
+.button{
+
+    color: blck;
+    background-color: white;
+    
+}

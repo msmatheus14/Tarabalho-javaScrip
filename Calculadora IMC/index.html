@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculador IMC - Matheus Andrade</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <script src="script.js"></script>
+   
 
     <div id="caixa">
-        <h1>Calculadora IMC</h1>
+        <h2>Calculadora IMC</h2>
         
-        <form id="formulario" onsubmit="return calcularIMC(event)">
-            <div>
+        <div id="formulario">
+        <form onsubmit="return calcularIMC(event)">
+            <div class="entradas">
                 <label for="altura">Digite sua altura</label>
                 <input type="text" id="altura">
             </div>
-            <div>
+            
+            <div class="entradas">
                 <label for="peso">Digite seu peso</label>
-                <input type="text" id="peso">
+                <input type="text" id="peso" >
             </div>
 
-            <input type="submit" value="Calcular" >
+            <input id="calcular" type="submit" value="Calcular" >
         </form>
+
+        <div>
+            <p id="resultado">IMC:</p>
+        </div>
+    </div>
     </div>
     
-    <div>
-        <p id="resultado">IMC:</p>
-    </div>
     
+    
+    <script src="script.js"></script>
 </body>
 </html>
