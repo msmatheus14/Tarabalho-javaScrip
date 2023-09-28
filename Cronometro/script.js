@@ -1,11 +1,13 @@
 var milesimo = 0
 var segundo = 0
 var minuto = 0
-
+var interv
 
 function iniciar() {
     
-var interv = setInterval(relogio, 10);
+    interv = setInterval(relogio, 10);
+    var bt = document.getElementById('iniciar');
+    bt.disabled = true;
 
 }
 
@@ -13,8 +15,11 @@ function pausar() {
 
     
     clearInterval(interv);
+    var bt = document.getElementById('iniciar');
+    bt.disabled = false;
+    
    
-}
+}  
 
 function reiniciar() {
 
@@ -22,6 +27,9 @@ function reiniciar() {
         milesimo = 0
         segundo = 0
         minuto = 0
+
+
+        document.getElementById('tempo').innerText = minuto +':'+ segundo + ':' + milesimo
     
 }
 
